@@ -1,6 +1,6 @@
 {
   "name": "omniprofiler",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "description": "Universal Memory Profiler with Modern Web3 Reports - Auto-detects 8+ languages (JS, Python, Java, Go, C#, C++, Rust, PHP) with stunning HTML reports, leak detection, and production monitoring.",
   "main": "index.js",
   "types": "index.d.ts",
