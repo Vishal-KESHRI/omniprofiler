@@ -1,0 +1,48 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          
+      - name: Install dependencies
+        run: npm install
+        
+      - name: Run tests
+        run: npm test
+        
+      - name: Create GitHub Release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          body: |
+            ## 🚀 OmniProfiler v1.0.0
+            
+            ### ✨ Features
+            - Universal memory profiling for 8+ languages
+            - Modern Web3 HTML reports with dark cyber theme
+            - Interactive UI with animations and glassmorphism
+            - Production-ready with minimal overhead
+            - Responsive design for all devices
+            - Advanced leak detection algorithms
+            
+            ### 📦 Installation
+            ```bash
+            npm install omniprofiler
+            ```
+          draft: false
+          prerelease: false
