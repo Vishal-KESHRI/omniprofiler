@@ -1,0 +1,66 @@
+{
+  "name": "omniprofiler",
+  "version": "2.0.0",
+  "description": "Universal Memory Profiler with Modern Web3 Reports - Auto-detects 8+ languages (JS, Python, Java, Go, C#, C++, Rust, PHP) with stunning HTML reports, leak detection, and production monitoring.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "node test/test.js",
+    "example": "node examples/basic-usage.js",
+    "universal": "node examples/universal-usage.js",
+    "production": "node examples/production-usage.js",
+    "report": "node examples/detailed-report-demo.js",
+    "report:html": "node examples/detailed-report-demo.js && open memory-reports/*.html",
+    "showcase": "node examples/omniprofiler-showcase.js",
+    "demo": "node test-modern-report.js",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "memory", 
+    "profiler", 
+    "leak-detection", 
+    "monitoring", 
+    "performance",
+    "universal",
+    "multi-language",
+    "javascript",
+    "python", 
+    "java",
+    "golang",
+    "csharp",
+    "cpp",
+    "rust",
+    "php",
+    "auto-detection",
+    "memory-analysis",
+    "gc-analysis",
+    "heap-profiling",
+    "web3",
+    "modern-ui",
+    "html-reports",
+    "production-ready"
+  ],
+  "author": "OmniProfiler Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Vishal-KESHRI/omniprofiler.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Vishal-KESHRI/omniprofiler/issues"
+  },
+  "homepage": "https://github.com/Vishal-KESHRI/omniprofiler#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "files": [
+    "src/",
+    "examples/",
+    "index.js",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ]
+}

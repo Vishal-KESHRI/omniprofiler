@@ -1,0 +1,9 @@
+test/
+reports/
+*.log
+.DS_Store
+node_modules/
+coverage/
+.nyc_output/
+.vscode/
+.idea/
